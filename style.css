@@ -84,7 +84,7 @@ h2 span {
 form {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 0.5rem;
 }
 
 .input-field {
@@ -109,6 +109,14 @@ input:focus {
     outline: 1px solid var(--Dark-Gray);
 }
 
+input.invalid {
+    border: 2px solid var(--Red);
+}
+
+input.invalid::placeholder {
+    opacity: 0;
+}
+
 .error-img {
     position: absolute;
     right: 15px;
@@ -120,9 +128,14 @@ input:focus {
     color: var(--Red);
     text-align: right;
     font-size: 0.6rem;
-    font-weight: 500;
+    font-weight: 600;
+    font-style: italic;
     margin-bottom: 0.6rem;
     display: none;
+}
+
+.error-img.visible, .error.visible {
+    display: block;
 }
 
 button {
@@ -141,10 +154,14 @@ button {
     box-shadow: inset 0px -5px 0px 0px rgba(39,187,123,1);
 }
 
+button:hover, button:active {
+    background-color: hsl(154, 84%, 70%);
+}
+
 .form-container p {
     color: var(--Gray);
     font-size: 0.72rem;
-    padding: 0.8rem 1rem 0;
+    padding: 0.8rem 0.6rem 0;
 }
 
 .form-container a {

@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![](./screenshot-mobile.png)
+![](./screenshot-mobile-error.png)
+![](./screenshot-desktop.png)
 
 
 ### Links
 
-- Live Site URL: [Live Site at Netlify]()
+- Live Site URL: [Live Site at Netlify](https://intro-sign-up-form-kw.netlify.app)
 
 ## My process
 
@@ -43,7 +44,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [JavaScript
+- JavaScript
 
 ## Author
 
